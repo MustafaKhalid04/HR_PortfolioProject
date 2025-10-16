@@ -39,14 +39,14 @@ All queries were executed in the schema `HR_Portfolio_Project`.
 ```sql
 SELECT * FROM HR_Portfolio_Project.employee_attrition;
 
-🔹 2. Count total employees
+###🔹 2. Count total employees
 SELECT COUNT(*) FROM HR_Portfolio_Project.employee_attrition;
 
 Purpose: Check dataset size — total employees in the organization.
 
 .
 
-🔹 3. Mid-career employees (Age 27–35, ≥5 years experience)
+###🔹 3. Mid-career employees (Age 27–35, ≥5 years experience)
 SELECT *
 FROM HR_Portfolio_Project.employee_attrition
 WHERE age BETWEEN 27 AND 35
