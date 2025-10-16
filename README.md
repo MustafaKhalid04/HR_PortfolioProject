@@ -66,6 +66,15 @@ The dataset is part of the **HR Portfolio Project** and includes a table `employ
 
 ---
 
+## 🗝️ Key Takeaways
+
+* Attrition is influenced by multiple factors including experience, salary hikes, promotions, and overtime
+* Employees with low salary growth or delayed promotions are at higher risk of leaving
+* Department-wise analysis helps HR prioritize interventions where attrition risk is highest
+* Data-driven insights support retention strategies and improve workforce planning
+
+---
+
 ## 📂 Repository Structure
 
 ```
@@ -81,4 +90,4 @@ HR-Portfolio-Project/
 
 ## ⚡ Author
 
-* [Mustafa Khalid] – Insight Analyst
+* [Mustafa Khalid] – Market Insight Analyst
