@@ -1,57 +1,84 @@
-HR Portfolio Project – Employee Attrition Analysis
+# ![HR Analytics Banner](https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy\&cs=tinysrgb\&fit=max\&fm=jpg\&ixid=M3w5NjA3fDB8MHwxfGFsbHwxfHxIdXJhbjJ8ZW58MHx8fHwxNjkyODk1MjA1\&ixlib=rb-4.0.3\&q=80\&w=1200)
 
-This repository contains an Employee Attrition Analysis using SQL. The goal is to analyze HR data to understand attrition patterns, identify risk factors, and provide actionable insights to retain talent.
+# HR Portfolio Project – Employee Attrition Analysis
 
-📝 Project Overview
+![SQL](https://img.shields.io/badge/SQL-Queries-blue?style=flat-square) ![Analytics](https://img.shields.io/badge/Data_Analysis-HR-green?style=flat-square) ![GitHub Repo](https://img.shields.io/badge/Repo-GitHub-black?style=flat-square)
 
-Employee attrition is a major challenge for organizations, impacting productivity, cost, and employee morale. This project uses SQL to analyze employee data and explore patterns related to:
+This repository contains an **Employee Attrition Analysis** using SQL, focused on identifying attrition trends and factors affecting employee retention.
 
-Experience, age, and tenure
+---
 
-Salary hikes and performance ratings
+## 📝 Project Overview
 
-Overtime and promotions
+Employee attrition can impact organizational productivity, costs, and morale. Using SQL, this project analyzes HR data to explore patterns related to:
 
-Department-wise trends
+* Employee experience, age, and tenure
+* Salary hikes and performance ratings
+* Overtime, promotions, and department trends
+* Gender and marital status influences on attrition
 
-Gender and marital status influences on attrition
+The analysis provides **actionable insights for HR teams** to retain talent and improve workplace satisfaction.
 
-The analysis helps HR teams make data-driven decisions to reduce turnover and improve employee satisfaction.
+---
 
-💾 Dataset
+## 💾 Dataset
 
-The dataset is part of the HR Portfolio Project and includes a table employee_attrition with key attributes such as:
+The dataset is part of the **HR Portfolio Project** and includes a table `employee_attrition` with attributes such as:
 
-EmployeeNumber, Age, Department, Gender, MaritalStatus
+* EmployeeNumber, Age, Department, Gender, MaritalStatus
+* TotalWorkingYears, YearsAtCompany, YearsSinceLastPromotion
+* MonthlyIncome, PercentSalaryHike, PerformanceRating
+* EducationField, Overtime, Attrition
 
-TotalWorkingYears, YearsAtCompany, YearsSinceLastPromotion
+---
 
-MonthlyIncome, PercentSalaryHike, PerformanceRating
+## 🔧 Technologies Used
 
-EducationField, Overtime, Attrition
+* **SQL** – Data extraction, filtering, and aggregation
+* **Relational Databases** – MySQL / PostgreSQL / SQL Server
 
-🔧 Technologies Used
+---
 
-SQL: Data extraction, filtering, and aggregation
+## 🚀 Get Started
 
-Relational Databases: MySQL / PostgreSQL / SQL Server
+1. Clone the repository:
 
-📊 Insights & Use Cases
+   ```bash
+   git clone https://github.com/yourusername/HR-Portfolio-Project.git
+   ```
+2. Open the SQL folder to access queries:
 
-Identify employees at risk of attrition based on experience, salary hikes, and overtime
+   ```
+   HR-Portfolio-Project/SQL/employee_attrition_queries.sql
+   ```
+3. Run the queries in your preferred SQL environment (MySQL, PostgreSQL, or SQL Server).
+4. Analyze the output to generate insights on employee attrition and retention strategies.
 
-Highlight departments with below-average salary increments
+---
 
-Detect top performers who have not received promotions for several years
+## 📊 Insights & Use Cases
 
-Understand gender and marital status trends in promotions and attrition
+* Identify high-risk employees based on tenure, salary hikes, and overtime
+* Highlight departments with below-average salary increments
+* Detect top performers without promotions for multiple years
+* Understand gender and marital status patterns in promotions and attrition
+* Provide actionable insights for HR decision-making and retention policies
 
-Provide actionable insights for HR strategies and retention policies
+---
 
-📂 Repository Structure
+## 📂 Repository Structure
+
+```
 HR-Portfolio-Project/
 │
 ├─ SQL/
 │   └─ employee_attrition_queries.sql
 │
 ├─ README.md
+```
+
+---
+
+## ⚡ Author
+
+* [Your Name] – Data Analyst / SQL Enthusiast
