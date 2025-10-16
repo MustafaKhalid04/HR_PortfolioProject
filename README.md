@@ -31,7 +31,7 @@ The primary goal is to help HR teams identify trends behind attrition, improve e
 
 ---
 
-## 🧩 Step 1: SQL Exploration & Analysis
+## 🧩 SQL Exploration & Analysis
 
 All queries were executed in the schema `HR_Portfolio_Project`.
 
