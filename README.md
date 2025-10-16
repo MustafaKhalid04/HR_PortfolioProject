@@ -57,7 +57,7 @@ WHERE age BETWEEN 27 AND 35
 
 Insight: Identifies experienced professionals in their prime career phase — critical for retention.
 
-🔹 4. Salary range (min/max) by department for <13% hike
+### 🔹 4. Salary range (min/max) by department for <13% hike
 SELECT Department,
        MAX(MonthlyIncome),
        MIN(MonthlyIncome)
@@ -68,7 +68,7 @@ GROUP BY Department;
 
 Insight: Highlights departments where salary increments are minimal — potential dissatisfaction zones.
 
-🔹 5. Average income (Medical field, >3 years at company)
+### 🔹 5. Average income (Medical field, >3 years at company)
 SELECT AVG(MonthlyIncome)
 FROM HR_Portfolio_Project.employee_attrition
 WHERE YearsAtCompany > 3
@@ -77,7 +77,7 @@ WHERE YearsAtCompany > 3
 
 Insight: Checks compensation fairness across education backgrounds.
 
-🔹 6. Married employees not promoted in last 2 years
+### 🔹 6. Married employees not promoted in last 2 years
 SELECT Gender, COUNT(EmployeeNumber)
 FROM HR_Portfolio_Project.employee_attrition
 WHERE MaritalStatus = 'Married'
@@ -88,7 +88,7 @@ GROUP BY Gender;
 
 Insight: Reveals potential link between promotion delay and attrition among married employees.
 
-🔹 7. High performers without promotion (≥4 years)
+### 🔹 7. High performers without promotion (≥4 years)
 SELECT *
 FROM HR_Portfolio_Project.employee_attrition
 WHERE PerformanceRating = (SELECT MAX(PerformanceRating))
@@ -97,7 +97,7 @@ WHERE PerformanceRating = (SELECT MAX(PerformanceRating))
 
 Insight: Identifies under-recognized top performers — high retention risk.
 
-🔹 8. Max & Min % Salary Hike by Tenure and Performance
+### 🔹 8. Max & Min % Salary Hike by Tenure and Performance
 SELECT YearsAtCompany, PerformanceRating, YearsSinceLastPromotion,
        MAX(PercentSalaryHike), MIN(PercentSalaryHike)
 FROM HR_Portfolio_Project.employee_attrition
@@ -107,7 +107,7 @@ ORDER BY MAX(PercentSalaryHike) DESC, MIN(PercentSalaryHike) ASC;
 
 Insight: Compares reward structure across different experience and performance groups.
 
-🔹 9. Overtime workers (min hike, >5 years, left company)
+### 🔹 9. Overtime workers (min hike, >5 years, left company)
 SELECT *
 FROM HR_Portfolio_Project.employee_attrition
 WHERE Overtime = 'Yes'
@@ -118,13 +118,14 @@ WHERE Overtime = 'Yes'
 
 Insight: Long-serving employees with overtime but minimal raises — key indicator of burnout-driven attrition.
 
-🔹 10. Overtime workers (max hike, <5 years)
+### 🔹 10. Overtime workers (max hike, <5 years)
 SELECT *
 FROM HR_Portfolio_Project.employee_attrition
 WHERE Overtime = 'Yes'
   AND PercentSalaryHike = (SELECT MAX(PercentSalaryHike) FROM HR_Portfolio_Project.employee_attrition)
   AND YearsAtCompany < 5;
 
+---
 
 Insight: Early-career employees rewarded well — indicates strong performance or strategic retention.
 
@@ -134,6 +135,8 @@ FROM HR_Portfolio_Project.employee_attrition
 WHERE Overtime = 'No'
   AND PercentSalaryHike = (SELECT MAX(PercentSalaryHike) FROM HR_Portfolio_Project.employee_attrition)
   AND YearsAtCompany < 5;
+
+---
 
 
 Insight: Reveals whether overtime affects pay growth or if raises are merit-based.
