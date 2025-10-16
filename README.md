@@ -81,4 +81,4 @@ HR-Portfolio-Project/
 
 ## ⚡ Author
 
-* [Your Name] – Data Analyst / SQL Enthusiast
+* [Mustafa Khalid] – Insight Analyst
